@@ -1,5 +1,12 @@
 import { Metadata } from 'next'
-import Image from 'next/image'
+import Skills from './compontents/skills'
+import About from './compontents/about'
+import Projects from './compontents/projects'
+import Hero from './compontents/hero'
+import Navbar from './compontents/navbar'
+
+
+
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -8,8 +15,14 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className='mt-{200px}'>
-      <p className='font-bold text-center uppercase text-3xl'>home</p>
+    <div>
+      <Navbar/>  
+      <Hero/>
+      <Projects />
+      <About/>
+      <Skills/>      
     </div>
+    
+
   )
 }
