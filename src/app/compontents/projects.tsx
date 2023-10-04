@@ -2,6 +2,7 @@
 import React from 'react'
 
 import {motion} from 'framer-motion'
+import Image from 'next/image'
 
 
   
@@ -34,13 +35,13 @@ export default function projects() {
         <div className='w-full h-full flex flex-col md:flex-row justify-center items-center'>
         <a href="https://to-do-list-nextjs-1.vercel.app/" target="_blank">
         <div className=' h-full md:h-[400px] w-[400px] border rounded shadow-md md:mr-6 flex flex-col justify-center items-center'>
-          <img className='h-full w-full' src="/images/Screenshot 2023-09-27 100327.png" alt="" />
+          <Image width={600} height={600} className='h-full w-full' src="/images/Screenshot 2023-09-27 100327.png" alt="" />
           <p>To-Do List</p>
         </div>
         </a>
         <a href="https://week7weekendproject.vercel.app/" target="_blank">
         <div className=' h-full md:h-[400px] w-[400px] flex flex-col justify-center items-center border rounded shadow-md mt-10 md:mt-0 '>
-          <img className='h-full w-full' src="/images/Screenshot 2023-10-04 154806.png" alt="" />
+          <Image className='h-full w-full' src="/images/Screenshot 2023-10-04 154806.png" width={600} height={600} alt="" />
           <p>Weather App</p>
         </div>
         </a>
